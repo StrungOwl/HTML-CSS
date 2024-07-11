@@ -1,9 +1,12 @@
 function setup() {
   // Add your setup code here
-  createCanvas(400, 400); // Example: create a canvas with width and height of 400 pixels
+  createCanvas(window.innerWidth, 400); // Example: create a canvas with width and height of 400 pixels
+  background(220); 
 }
 
 function draw() {
   // Add your drawing code here
-  background(220); // Example: set the background color to 
+  noStroke();
+  fill(255, 80);
+  circle(mouseX, mouseY, width*0.05);
 }
