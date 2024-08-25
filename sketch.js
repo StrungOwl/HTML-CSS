@@ -23,8 +23,7 @@ function setup() {
   });
 
   if(header2) {
-    let header2 = select("#header2");
-
+  let header2 = select("#header-two");
   header2.mouseOver(() => {
     header2.style('font-size', '10vh');
     header2.style('color', 'red');
