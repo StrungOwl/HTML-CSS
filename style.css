@@ -20,6 +20,12 @@ html, body {
      
   }
 
+  #header2 {
+    color: #000000be; 
+    text-align: center;
+    padding-top: 10px; 
+  }
+
   main {
     padding-top: 10px; 
   }
@@ -28,7 +34,7 @@ html, body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 30%;
     border-radius: 10dvh;
     opacity: 0.5; /* Slightly transparent */
     padding: 7vh; 
