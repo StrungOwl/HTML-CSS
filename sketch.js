@@ -23,15 +23,18 @@ function setup() {
     }
   });
 
+  if(header2) {
   header2.mouseOver(() => {
     header2.style('font-size', '10vh');
     header2.style('color', 'red');
   }); 
+  
 
   header2.mouseOut(() => {
     header2.style('font-size', '5vh');
     header2.style('color', 'black');
   }); 
+  }
 
 
   colorMode(HSB);
