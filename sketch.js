@@ -2,12 +2,37 @@ let circleSize, halfSize;
 let circles = [];
 let repelDist;
 let canvas;
+let makeBig = false; 
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
   canvas.style('position', 'fixed');
+
+  //REFERENCE HTML ELEMENTS ----------------------
+  let mainImage = select("#main-image"); 
+  let header2 = select("#header2");
+
+  mainImage.mousePressed(() => {
+    makeBig = !makeBig;
+    if (makeBig) {
+      mainImage.style('width', '100%');
+    } else {
+      mainImage.style('width', '30%');
+    }
+  });
+
+  header2.mouseOver(() => {
+    header2.style('font-size', '10vh');
+    header2.style('color', 'red');
+  }); 
+
+  header2.mouseOut(() => {
+    header2.style('font-size', '5vh');
+    header2.style('color', 'black');
+  }); 
+
 
   colorMode(HSB);
   noStroke();
