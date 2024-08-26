@@ -60,11 +60,6 @@ function draw() {
     circle.repelCircle();
   }
 
-  push();
-  fill(0);
-  circle(width/2, height/2, height*0.34);
-  pop();
-
 }
 
 function windowResized() {
