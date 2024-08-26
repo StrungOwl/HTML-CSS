@@ -53,11 +53,18 @@ function setup() {
 function draw() {
   background(255, 0.08);
 
+
   for (let circle of circles) {
     circle.displayCircle();
     circle.changeColor();
     circle.repelCircle();
   }
+
+  push();
+  fill(0);
+  circle(width/2, height/2, height*0.34);
+  pop();
+
 }
 
 function windowResized() {
